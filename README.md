@@ -10,19 +10,6 @@
 
 Ten projekt symuluje system sygnalizacji świetlnej zarządzany przez system SCADA (Supervisory Control and Data Acquisition), który komunikuje się z PLC (Programmable Logic Controller). Wizualizacja sygnalizacji świetlnej jest obsługiwana przez aplikację frontendową za pomocą HTML i CSS. Docker jest używany do konteneryzacji każdego komponentu systemu, co ułatwia wdrażanie i zarządzanie.
 
-## Struktura Projektu
-project/
-├── Lights/
-│ ├── Lights.html
-│ ├── LightsStyle.css
-│ ├── Dockerfile
-│ └── .dockerignore
-├── SCADA/
-│ ├── scada_controller.py
-│ ├── Dockerfile
-└── PLC/
-├── PLC.py
-├── Dockerfile
 ### Komponenty
 
 1. **Lights**:
