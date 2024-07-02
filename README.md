@@ -1,6 +1,7 @@
 # Ochrona Urządzeń OT/IoT za pomocą Suricata
 
-![SCADA NETWORK DANGER SIMULATION](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/5a11a9e8-1b4f-4564-8b85-927005149ca8)
+
+![SCADA](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/087715ea-3307-4249-8046-1f6f58666dc9)
 
 
 ## Przegląd Projektu
