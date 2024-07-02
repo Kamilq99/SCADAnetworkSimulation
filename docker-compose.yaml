@@ -1,46 +1,16 @@
-version: '3.8'
-
+version: '3'
 services:
   lights:
     build: ./Lights
-    container_name: lights-container
-    restart: always
-    networks:
-      macvlan:
-        ipv4_address:
-
+    ports:
+      - "8080:80"
+  
   scada:
     build: ./SCADA
-    container_name: scada-container
-    restart: always
+    depends_on:
+      - plc
+  
+  plc:
+    build: ./PLC
     ports:
-      - "507:507"
-    networks:
-      macvlan:
-        ipv4_address:
-
-  suricata:
-    image: jasonish/suricata:latest
-    container_name: suricata-container
-    restart: always
-    cap_add:
-      - NET_RAW
-      - NET_ADMIN
-      - SYS_NICE
-    environment:
-      - SURICATA_UPDATE_RULES=1
-    network_mode: host
-    volumes:
-      - /path/to/local/logs:/var/log/suricata
-      - /path/to/local/suricata.yaml:/etc/suricata/suricata.yaml
-    command: ["-i", "\\Device\\NPF_{interfejs}"]
-
-networks:
-  macvlan:
-    external:
-      name: macvlan
-
-volumes:
-  lights:
-  scada:
-  suricata:
+      - "5000:5000"

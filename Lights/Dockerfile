@@ -1,7 +1,2 @@
-FROM python:3.9-slim
-
-WORKDIR /app
-
-COPY . /app
-
-CMD ["python", "traffic_lights.py"]
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
