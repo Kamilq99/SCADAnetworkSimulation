@@ -1,9 +1,6 @@
 # Ochrona Urządzeń OT/IoT za pomocą Suricata
 
 
-![SCADA](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/087715ea-3307-4249-8046-1f6f58666dc9)
-
-
 # System Sygnalizacji Świetlnej z Symulacją SCADA i PLC
 
 ## Opis Projektu
