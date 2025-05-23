@@ -51,30 +51,22 @@ The project is an example of the use of modern programming solutions to represen
     - `PLC.py`: A Python script simulating a PLC that controls traffic lights based on commands received from a SCADA system.
     - `Dockerfile`: Docker configuration for PLC.
 
-## Jak Uruchomić
+## How to run my app
+From the very beginning, the application was designed to be run in a containerized environment using Docker. This method of distribution and run ensures simplicity, repeatability, and ease of implementation in both local and cloud environments.
 
-### Wymagania
+For this reason, the recommended way to run the project is to use Docker configuration files (e.g. Dockerfile, docker-compose.yml) available in the repository. They allow you to quickly build and run the application without having to manually install dependencies or configure the environment.
 
-- [Docker](https://www.docker.com/get-started)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+More advanced users who prefer other containerization tools — such as Podman — can easily adapt existing Docker files to their own needs. Thanks to Podman's compatibility with Docker CLI, this migration should not be difficult for people with experience with containerization.
 
 ### Kroki do Uruchomienia
 
-2. Zbuduj i uruchom kontenery:
 
-    ```bash
-    docker-compose up --build
-    ```
 
-3. Uzyskaj dostęp do wizualizacji sygnalizacji świetlnej:
+### Docker Compose Configuration
 
-    Otwórz przeglądarkę internetową i przejdź do `http://localhost:8080`.
+The `docker-compose.yml` file is used to define and run a multi-container Docker application. The configuration includes:
 
-### Konfiguracja Docker Compose
-
-Plik `docker-compose.yml` jest używany do definiowania i uruchamiania aplikacji Docker z wieloma kontenerami. Konfiguracja obejmuje:
-
-- **Lights**: Uruchamia serwer Nginx do serwowania plików HTML i CSS.
-- **SCADA**: Uruchamia skrypt kontrolera SCADA.
-- **PLC**: Uruchamia skrypt PLC.
+- **Lights**: Starts an Nginx server to serve HTML and CSS files.
+- **SCADA**: Starts a SCADA controller script.
+- **PLC**: Starts a PLC script.
 
