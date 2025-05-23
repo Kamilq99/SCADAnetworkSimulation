@@ -30,6 +30,12 @@ The frontend can operate both as a local web application and as a component inte
 
 The project is an example of the use of modern programming solutions to represent the logic of classic automation systems. Thanks to the use of microservices, REST API and the master-slave approach, it was possible to create a flexible and readable architecture that can be easily developed and adapted to various scenarios. The project can be treated as an introduction to more advanced simulations of traffic control systems or as didactic material for learning the basics of OT and IoT systems in the context of software engineering.
 
+# Visualization Appearance
+
+![Red Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/24c03f55-cbe7-43b3-a3b6-3c69d35284c3)
+![Yellow Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/33285bb9-293e-4807-96f8-fcdf97bcc485)
+![Green Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/99875af1-c3f3-46ed-b4b4-f2bb584352d3)
+
 ## Components
 
 1. **Lights**:
@@ -72,8 +78,3 @@ Plik `docker-compose.yml` jest używany do definiowania i uruchamiania aplikacji
 - **SCADA**: Uruchamia skrypt kontrolera SCADA.
 - **PLC**: Uruchamia skrypt PLC.
 
-# Wygląd Wizualizacji
-
-![Red Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/24c03f55-cbe7-43b3-a3b6-3c69d35284c3)
-![Yellow Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/33285bb9-293e-4807-96f8-fcdf97bcc485)
-![Green Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/99875af1-c3f3-46ed-b4b4-f2bb584352d3)
