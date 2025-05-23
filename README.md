@@ -1,27 +1,23 @@
 # Traffic light simulation system
 
-
-# System Sygnalizacji Świetlnej z Symulacją SCADA i PLC
-
-## Opis Projektu
+## Project Description
 
 Ten projekt symuluje system sygnalizacji świetlnej zarządzany przez system SCADA (Supervisory Control and Data Acquisition), który komunikuje się z PLC (Programmable Logic Controller). Wizualizacja sygnalizacji świetlnej jest obsługiwana przez aplikację frontendową za pomocą HTML i CSS. Docker jest używany do konteneryzacji każdego komponentu systemu, co ułatwia wdrażanie i zarządzanie.
 
-### Komponenty
+### Components
 
 1. **Lights**:
-    - `Lights.html`: Plik HTML tworzący wizualizację sygnalizacji świetlnej.
-    - `LightsStyle.css`: Plik CSS stylizujący sygnalizację świetlną.
-    - `Dockerfile`: Konfiguracja Dockera do serwowania plików HTML i CSS za pomocą Nginx.
-    - `.dockerignore`: Plik określający, które pliki mają być ignorowane podczas budowania obrazu Docker.
+    - `Lights.html`: HTML file creating a traffic light visualization.
+    - `LightsStyle.css`: CSS file styling the traffic light.
+    - `Dockerfile`: Configuring Docker to serve HTML and CSS files using Nginx.
 
 2. **SCADA**:
-    - `scada_controller.py`: Skrypt Pythona symulujący system SCADA, który co 30 sekund wysyła komendy do PLC.
-    - `Dockerfile`: Konfiguracja Dockera dla systemu SCADA.
+    - `scada_controller.py`: Python script simulating a SCADA system that sends commands to a PLC every 30 seconds.
+    - `Dockerfile`: Docker configuration for SCADA system.
 
 3. **PLC**:
-    - `PLC.py`: Skrypt Pythona symulujący PLC, który steruje sygnalizacją świetlną na podstawie komend otrzymanych od systemu SCADA.
-    - `Dockerfile`: Konfiguracja Dockera dla PLC.
+    - `PLC.py`: A Python script simulating a PLC that controls traffic lights based on commands received from a SCADA system.
+    - `Dockerfile`: Docker configuration for PLC.
 
 ## Jak Uruchomić
 
