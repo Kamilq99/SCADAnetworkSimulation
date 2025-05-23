@@ -58,11 +58,26 @@ For this reason, the recommended way to run the project is to use Docker configu
 
 More advanced users who prefer other containerization tools — such as Podman — can easily adapt existing Docker files to their own needs. Thanks to Podman's compatibility with Docker CLI, this migration should not be difficult for people with experience with containerization.
 
-### Kroki do Uruchomienia
+## Steps to Get Started
+
+So let's start how to run my application. Obviously, you need to clone my github repository or create a fork and then clone it.
+
+To run the application and develop it, you will need a Python interpreter, and then you need to install the flask framework with the command:
+
+```Bash
+pip install flask
+```
+
+Another important thing is the Docker I mentioned earlier, in order to run the application, you need to have Docker containerization installed on a computer with a Linux, Windows or MacOS operating system. The application does not require starting each container separately and by the way, I have not used it for a long time, but I widely use an additional device built into docker, which is docker-compose. To run the application, you need to run the command:
+
+```Bash
+docker-compose up --build -d
+```
+
+It will make all 3 containers built and run in the background. The master-slave architecture (SCADA - PLC) works on port 5000 and should be generally available on localhost:5000, while the frontend visualization of the application is available on localhost:8080
 
 
-
-### Docker Compose Configuration
+## Docker Compose Configuration
 
 The `docker-compose.yml` file is used to define and run a multi-container Docker application. The configuration includes:
 
