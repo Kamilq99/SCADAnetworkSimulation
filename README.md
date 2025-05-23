@@ -1,4 +1,4 @@
-# Ochrona Urządzeń OT/IoT za pomocą Suricata
+# Traffic light simulation system
 
 
 # System Sygnalizacji Świetlnej z Symulacją SCADA i PLC
@@ -32,12 +32,6 @@ Ten projekt symuluje system sygnalizacji świetlnej zarządzany przez system SCA
 
 ### Kroki do Uruchomienia
 
-1. Sklonuj repozytorium:
-
-    ```bash
-    git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation.git)
-    ```
-
 2. Zbuduj i uruchom kontenery:
 
     ```bash
@@ -56,7 +50,7 @@ Plik `docker-compose.yml` jest używany do definiowania i uruchamiania aplikacji
 - **SCADA**: Uruchamia skrypt kontrolera SCADA.
 - **PLC**: Uruchamia skrypt PLC.
 
-#Wygląd Wizualizacji
+# Wygląd Wizualizacji
 
 ![Red Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/24c03f55-cbe7-43b3-a3b6-3c69d35284c3)
 ![Yellow Light](https://github.com/Kamilq99/SCADAnetworkDANGERsimulation/assets/83961352/33285bb9-293e-4807-96f8-fcdf97bcc485)
